@@ -58,3 +58,16 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+# Jetbrain Rider Cache
+.idea/
+Assets/Plugins/Editor/JetBrains*
+.DS_Store
+.idea/.idea.Tetris/.idea/codeStyles/codeStyleConfig.xml
+.idea/.idea.Tetris/.idea/contentModel.xml
+.idea/.idea.Tetris/.idea/encodings.xml
+.idea/.idea.Tetris/.idea/indexLayout.xml
+.idea/.idea.Tetris/.idea/modules.xml
+.idea/.idea.Tetris/.idea/projectSettingsUpdater.xml
+.idea/.idea.Tetris/.idea/workspace.xml
+.idea/.idea.Tetris/riderModule.iml
+Assets/.DS_Store
