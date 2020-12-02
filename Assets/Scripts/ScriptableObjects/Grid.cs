@@ -37,14 +37,12 @@ namespace ScriptableObjects
         
         private float GetSize(float count) => (SizeOfField + interval) * count;
 
-        public int ClampHorizontalGridCoordinate(int xCoordinate, int sizeX, int step)
+        public bool CheckSide(int xCoordinate, int sizeX, int step)
         {
-            xCoordinate += step;
-            var leftX = Math.Max(xCoordinate, 0);
-            var rightX = Math.Min(leftX + (sizeX - 1), HorizontalCount - 1);
-            return Math.Min(leftX, rightX - (sizeX - 1));
+            var newCoordinate = xCoordinate + step;
+            return newCoordinate < 0 || newCoordinate + sizeX > horizontalCount;
         }
-
+        
         public bool CheckGround(int yCoordinate, int sizeY, int step)
         {
             return yCoordinate + sizeY + step > verticalCount;

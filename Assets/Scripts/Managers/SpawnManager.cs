@@ -73,6 +73,7 @@ namespace UnityAcademy.TreeOfControllersExample
             AssetBundle.UnloadAllAssetBundles(true);
             assetBundle = BundleLoader.Load(block.BundleName, colorTag);
             PredictSpawnShape();
+            Random.InitState((int) DateTime.Now.Ticks);
         }
 
         [ContextMenu("Spawn")]

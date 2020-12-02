@@ -45,12 +45,13 @@ namespace DefaultNamespace
             var horizontal = Input.GetAxis("Horizontal");
             while (horizontal != 0)
             {
-                gridCoordinate.x =
-                    _grid.ClampHorizontalGridCoordinate(gridCoordinate.x, Shape.Size.x, Math.Sign(horizontal));
-                
-                // TODO: check near blocks.
-                
-                UpdatePosition();
+                var step = Math.Sign(horizontal);
+                if (!GridManager.CheckHorizontalCollision(gridCoordinate, blocks, step))
+                {
+                    gridCoordinate.x += step;
+                    UpdatePosition();
+                }
+
                 yield return new WaitForSeconds(0.5f);
                 horizontal = Input.GetAxis("Horizontal");
             }
@@ -61,7 +62,9 @@ namespace DefaultNamespace
         {
             while (true)
             {
-                yield return new WaitForSeconds(0.5f);
+                float interval = Input.GetAxis("Vertical") < 0 ? 0.25f : 0.5f ;
+
+                yield return new WaitForSeconds(interval);
                 if (GridManager.CheckVerticalCollision(gridCoordinate, blocks, 1))
                 {
                     RegisterShape();
