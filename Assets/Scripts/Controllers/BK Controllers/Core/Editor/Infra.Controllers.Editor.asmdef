@@ -1,0 +1,12 @@
+{
+  "name": "Infra.Controllers.Editor",
+  "references": [
+    "Infra.Controllers"
+  ],
+  "optionalUnityReferences": [],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false
+}

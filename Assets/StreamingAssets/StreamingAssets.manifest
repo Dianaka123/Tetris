@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+CRC: 2933041241
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: block.color
+      Dependencies: {}
+    Info_1:
+      Name: block.shadow
+      Dependencies: {}

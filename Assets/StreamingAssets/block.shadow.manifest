@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 116039228
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 815a829e8a061f94c6f026f0ebf2fd2d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 52b90fe34acdbe892c80e1ff630fee3e
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Prefabs/BlockShadow.prefab
+Dependencies: []

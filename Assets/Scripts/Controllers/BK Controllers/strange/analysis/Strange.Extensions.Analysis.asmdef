@@ -1,0 +1,14 @@
+{
+    "name": "Strange.Extensions.Analysis",
+    "references": [
+        "UnityApplicationExtensions"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}
