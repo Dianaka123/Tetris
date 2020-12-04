@@ -1,4 +1,4 @@
-using Models.Interfaces;
+using Game.Core.Interfaces;
 using UnityEngine;
 
 namespace Utils
@@ -7,7 +7,6 @@ namespace Utils
     {
         public static Vector2 GetSize(this IGrid grid) =>
             new Vector2(grid.GetSize(grid.Dimensions.x), grid.GetSize(grid.Dimensions.y));
-
 
         public static Vector2 GetCenter(this IGrid grid) => grid.GetSize() / 2;
         

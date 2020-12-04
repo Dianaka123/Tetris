@@ -1,10 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
-using Models.Interfaces;
+using Game.Core.Interfaces;
 using UnityEngine;
-using Utils;
 
-namespace UnityAcademy.TreeOfControllersExample
+namespace Utils
 {
     public static class GridManagerExtension
     {

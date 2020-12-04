@@ -1,0 +1,21 @@
+{
+    "name": "PlayModeTests",
+    "references": [
+        "Strange",
+        "Game.Core",
+        "Game.GamePlay",
+        "Game.Core.Managers",
+        "Core.Intefaces",
+        "Utils"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

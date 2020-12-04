@@ -1,0 +1,18 @@
+{
+    "name": "Game.MainUI",
+    "references": [
+        "Strange",
+        "Infra.Controllers",
+        "Game.Core.Common",
+        "Core.Intefaces",
+        "Unity.TextMeshPro"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

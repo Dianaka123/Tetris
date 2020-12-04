@@ -1,0 +1,15 @@
+{
+    "name": "Utils",
+    "references": [
+        "Core.Intefaces",
+        "Core.ScriptableObject"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

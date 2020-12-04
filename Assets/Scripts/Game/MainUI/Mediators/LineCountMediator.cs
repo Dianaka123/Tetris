@@ -1,8 +1,7 @@
-using System.Runtime.InteropServices;
+using Game.Core.Common;
+using Game.Core.Interfaces;
 using Game.MainUI.Views.Views;
-using Models.Interfaces;
 using strange.extensions.mediation.impl;
-using UnityAcademy.TreeOfControllersExample;
 
 namespace Game.MainUI.Mediators
 {

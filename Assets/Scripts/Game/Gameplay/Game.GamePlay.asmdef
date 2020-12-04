@@ -1,0 +1,20 @@
+{
+    "name": "Game.GamePlay",
+    "references": [
+        "Strange",
+        "Utils",
+        "EditrorScripts",
+        "Core.ScriptableObject",
+        "Game.Core.Common",
+        "Core.Intefaces",
+        "Infra.Controllers"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

@@ -1,0 +1,23 @@
+{
+    "name": "Game.Core",
+    "references": [
+        "Strange",
+        "Infra.Controllers",
+        "Infra.Controllers.Editor",
+        "ControllerFactory",
+        "Game.GamePlay",
+        "Core.Intefaces",
+        "Game.Injection",
+        "Game.Core.Common",
+        "Game.Core.Managers",
+        "Game.MainUI"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

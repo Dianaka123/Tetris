@@ -810,6 +810,55 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &800313981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 800313983}
+  - component: {fileID: 800313982}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &800313982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800313981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d1c1214c75d4c4cb80dbfb2d25bf560, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _contextView: {fileID: 0}
+  _hasContextView: 0
+  shapeMoveSound: {fileID: 8300000, guid: 4cd439232f68e4172a5b1abb9fd4a0a8, type: 3}
+  shapeRotateRound: {fileID: 8300000, guid: dca9815ede1d74e5baaed59ba447b143, type: 3}
+  destroySound: {fileID: 8300000, guid: 7b26c5323daf64f6a9f1550f4666b3ee, type: 3}
+  musicSound: {fileID: 8300000, guid: 27127a3c3223441498080e90051d085c, type: 3}
+--- !u!4 &800313983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800313981}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1687286356}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &931297468 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1798833719489804559, guid: 79e4513065a8d403692c883217aabee9,
@@ -1067,6 +1116,7 @@ MonoBehaviour:
   gridManager: {fileID: 2024435381}
   shapeLoader: {fileID: 608071632}
   tickManager: {fileID: 1490387871}
+  soundManager: {fileID: 800313982}
 --- !u!4 &1687286356
 Transform:
   m_ObjectHideFlags: 0
@@ -1084,6 +1134,7 @@ Transform:
   - {fileID: 1797444977}
   - {fileID: 2074359483}
   - {fileID: 1490387872}
+  - {fileID: 800313983}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

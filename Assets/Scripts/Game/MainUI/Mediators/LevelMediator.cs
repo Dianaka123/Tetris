@@ -1,3 +1,4 @@
+using Game.Core.Common;
 using Game.MainUI.Views.Views;
 using strange.extensions.mediation.impl;
 

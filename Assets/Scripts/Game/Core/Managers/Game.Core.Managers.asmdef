@@ -1,0 +1,17 @@
+{
+    "name": "Game.Core.Managers",
+    "references": [
+        "Core.ScriptableObject",
+        "Strange",
+        "Core.Intefaces",
+        "Game.Core.Common"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

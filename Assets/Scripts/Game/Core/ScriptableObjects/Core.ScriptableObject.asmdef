@@ -1,0 +1,14 @@
+{
+    "name": "Core.ScriptableObject",
+    "references": [
+        "Core.Intefaces"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

@@ -1,6 +1,4 @@
 using Game.Gameplay.Interfaces;
-using Models.Interfaces;
-using UnityAcademy.TreeOfControllersExample;
 using UnityEngine;
 using Utils;
 

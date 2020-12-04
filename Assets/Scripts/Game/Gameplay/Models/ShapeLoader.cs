@@ -1,5 +1,4 @@
 using Game.Gameplay.Interfaces;
-using ScriptableObject;
 using strange.extensions.mediation.impl;
 using UnityEngine;
 using Utils;
@@ -11,7 +10,7 @@ namespace Game.Gameplay.Models
         private static readonly string nameOfBlock = "Block";
         private static readonly string colorTag = "color";
 
-        [SerializeField] private Block block;
+        [SerializeField] private Core.ScriptableObjects.Block block;
         
         private AssetBundle assetBundleColored;
 

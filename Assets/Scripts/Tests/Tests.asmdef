@@ -1,0 +1,21 @@
+{
+    "name": "Tests",
+    "references": [
+        "Core.Intefaces",
+        "Strange",
+        "Utils",
+        "Game.GamePlay"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}

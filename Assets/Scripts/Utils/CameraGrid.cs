@@ -1,21 +1,21 @@
-﻿using System;
-using ScriptableObject;
-using UnityEngine;
-using Utils;
-using Grid = ScriptableObjects.Grid;
+﻿using UnityEngine;
+using Grid = Game.Core.ScriptableObjects.Grid;
 
-[RequireComponent(typeof(Camera))]
-public class CameraGrid : MonoBehaviour
+namespace Utils
 {
-    [SerializeField] private Grid grid;
-
-    private void Awake()
+    [RequireComponent(typeof(Camera))]
+    public class CameraGrid : MonoBehaviour
     {
-        var camera = GetComponent<Camera>();
-        camera.orthographic = true;
+        [SerializeField] private Grid grid;
 
-        var gridWorldSize = grid.GetSize();
-        camera.orthographicSize = gridWorldSize.x;
-        camera.aspect = gridWorldSize.x / gridWorldSize.y;
+        private void Awake()
+        {
+            var camera = GetComponent<Camera>();
+            camera.orthographic = true;
+
+            var gridWorldSize = grid.GetSize();
+            camera.orthographicSize = gridWorldSize.x;
+            camera.aspect = gridWorldSize.x / gridWorldSize.y;
+        }
     }
 }

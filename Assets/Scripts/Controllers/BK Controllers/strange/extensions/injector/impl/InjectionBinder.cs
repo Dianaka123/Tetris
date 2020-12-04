@@ -39,7 +39,7 @@ namespace strange.extensions.injector.impl
         private readonly Dictionary<Type, Dictionary<Type, IInjectionBinding>> suppliers =
             new Dictionary<Type, Dictionary<Type, IInjectionBinding>>();
 
-        protected InjectionBinder()
+        public InjectionBinder()
         {
             injector = new Injector();
             injector.binder = this;

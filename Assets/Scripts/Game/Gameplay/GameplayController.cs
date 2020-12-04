@@ -1,11 +1,9 @@
-using System;
 using System.Threading.Tasks;
+using Game.Core.Common;
+using Game.Core.Interfaces;
 using Game.Gameplay.Interfaces;
 using Infra.Controllers.Core;
-using Models.Interfaces;
-using UnityAcademy.TreeOfControllersExample;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 namespace Game.Gameplay
 {
@@ -14,11 +12,10 @@ namespace Game.Gameplay
         private readonly ISpawnManager _spawnManager;
         private readonly IStatisticsManager _statisticsManager;
         private readonly ISoundManager _soundManager;
-        
+
         public GameplayController(
             ISpawnManager spawnManager,
             IStatisticsManager statisticsManager,
-            IShapeLoader shapeLoader,
             ISoundManager soundManager,
             IControllerFactory controllerFactory) : base(controllerFactory)
         {
@@ -34,7 +31,7 @@ namespace Game.Gameplay
             _statisticsManager.Level = 1;
             _statisticsManager.Score = 0;
             _statisticsManager.LinesCount = 0;
-            
+
             _spawnManager.Initialize();
             _spawnManager.Spawn();
 
@@ -43,7 +40,10 @@ namespace Game.Gameplay
 
         protected override Task OnStopAsync()
         {
+            _soundManager.Stop();
             return Task.CompletedTask;
         }
+        
+
     }
 }
