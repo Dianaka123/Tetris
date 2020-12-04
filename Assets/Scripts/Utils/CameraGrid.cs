@@ -1,6 +1,7 @@
 ﻿using System;
 using ScriptableObject;
 using UnityEngine;
+using Utils;
 using Grid = ScriptableObjects.Grid;
 
 [RequireComponent(typeof(Camera))]
@@ -11,7 +12,10 @@ public class CameraGrid : MonoBehaviour
     private void Awake()
     {
         var camera = GetComponent<Camera>();
-        camera.orthographicSize = grid.HorizontalSize;
-        camera.aspect = grid.HorizontalSize / grid.VerticalSize;
+        camera.orthographic = true;
+
+        var gridWorldSize = grid.GetSize();
+        camera.orthographicSize = gridWorldSize.x;
+        camera.aspect = gridWorldSize.x / gridWorldSize.y;
     }
 }
