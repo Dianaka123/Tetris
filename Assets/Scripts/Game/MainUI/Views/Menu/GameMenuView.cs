@@ -8,12 +8,12 @@ namespace Game.MainUI.Views.Menu
     {
         [SerializeField] private GameObject GameMenu;
         
-        public void ActivateMenu()
+        public virtual void ActivateMenu()
         {
             GameMenu.SetActive(true);
         }
 
-        public void DeactivateMenu()
+        public virtual void DeactivateMenu()
         {
             GameMenu.SetActive(false);
         }

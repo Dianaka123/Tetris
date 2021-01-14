@@ -12,6 +12,8 @@ namespace Game.Core
     public sealed class GameRootController : RootController
     {
         private readonly GameOverSignal _gameOverSignal;
+        private readonly GameStartMenuSignal _gameStartMenuSignal;
+        private readonly GameStartSignal _gameStartSignal;
         private readonly TickManager _tickManager;
         
         public GameRootController(
@@ -34,12 +36,15 @@ namespace Game.Core
         {
             await base.OnStartAsync();
             _gameOverSignal.AddListener(GameOverHandler);
+            _gameStartMenuSignal.AddListener(StartMenuHandler);
+            _gameStartSignal.AddListener(StartGameHandler);
             await CreateAndStartFeatures();
         }
 
         protected override Task OnStopAsync()
         {
             _gameOverSignal.RemoveListener(GameOverHandler);
+            _gameStartMenuSignal.RemoveListener(StartMenuHandler);
             return base.OnStopAsync();
         }
 
@@ -56,6 +61,18 @@ namespace Game.Core
                 CreateAndStartAsync<MainUIController>(CancellationToken)
             };
             await Task.WhenAll(tasks);
+        }
+        
+        private void StartMenuHandler()
+        {
+            Debug.Log("StartMenu");
+            _tickManager.IsFreezed = true;
+        }
+        
+        private void StartGameHandler()
+        {
+            Debug.Log("Start");
+            _tickManager.IsFreezed = false;
         }
         
         private void GameOverHandler()

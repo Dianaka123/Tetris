@@ -9,9 +9,6 @@ using strange.extensions.context.api;
 using strange.extensions.context.impl;
 using UnityEngine;
 
-#if UNITY_IOS || UNITY_EDITOR
-#endif
-
 namespace Game
 {
     public partial class GameContext : MVCSContext
@@ -45,6 +42,9 @@ namespace Game
             injectionBinder.Bind<ISoundManager>().ToValue(_gameRootView.SoundManager);
 
             injectionBinder.Bind<GameOverSignal>().ToSingleton();
+            injectionBinder.Bind<GameStartMenuSignal>().ToSingleton();
+            injectionBinder.Bind<GameStartSignal>().ToSingleton();
+            
             injectionBinder.Bind<LevelChangedSignal>().ToSingleton();
             injectionBinder.Bind<LineFullSignal>().ToSingleton();
             injectionBinder.Bind<ScoreChangedSignal>().ToSingleton();

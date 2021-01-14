@@ -26,7 +26,7 @@ namespace Game.Core
         [Inject]
         public ShapeHorizontalMoveSignal ShapeHorizontalMoveSignal { get; set; }
 
-        public bool IsFreezed { get; set; } = false;
+        public bool IsFreezed { get; set; } = true;
 
         private Coroutine _horizontalMovingCoroutine;
 

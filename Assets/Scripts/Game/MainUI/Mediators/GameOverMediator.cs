@@ -9,7 +9,7 @@ namespace UnityAcademy.TreeOfControllersExample.Views
     public class GameOverMediator : Mediator
     {
         [Inject]
-        public GameOverMenuView GameMenuView { get; set; }
+        public GameOverMenuView GameOverMenuView { get; set; }
         
         [Inject] 
         public GameOverSignal GameOverSignal { get; set; }
@@ -28,7 +28,7 @@ namespace UnityAcademy.TreeOfControllersExample.Views
         
         private void GameOverCallback()
         {
-            GameMenuView.ActivateMenu();
+            GameOverMenuView.ActivateMenu();
         }
     }
 }

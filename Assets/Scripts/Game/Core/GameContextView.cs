@@ -50,7 +50,7 @@ namespace Game.Core
             }
             catch (Exception e)
             {
-                
+                Debug.Log(e.StackTrace);
             }
         }
 

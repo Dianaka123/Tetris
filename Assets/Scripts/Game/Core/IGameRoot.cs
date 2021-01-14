@@ -12,5 +12,6 @@ namespace Game.Core
         IShapeLoader ShapeLoader { get; }
         TickManager TickManager { get; }
         ISoundManager SoundManager { get; }
+        
     }
 }
